@@ -12,7 +12,7 @@ public:
 
     bool keyPressed();
     EncoderKey lastKeyPressed();
-    virtual void readEncoder() = 0;
+    virtual void update() = 0;
 
 protected:
     bool mKeyPressed = false;

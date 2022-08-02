@@ -23,7 +23,7 @@ ButtonEncoder::ButtonEncoder(pin_size_t leftButtonPin, pin_size_t rightButtonPin
  * @brief Read the current state of the encoder, i.e. what buttons are pressed
  * 
  */
-void ButtonEncoder::readEncoder() {
+void ButtonEncoder::update() {
     bool leftButtonPressed = digitalRead(mLeftButtonPin) == mPressedPinStatus;
     bool rightButtonPressed = digitalRead(mRightButtonPin) == mPressedPinStatus;
     bool enterButtonPressed = digitalRead(mEnterButtonPin) == mPressedPinStatus;

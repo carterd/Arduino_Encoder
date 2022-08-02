@@ -9,7 +9,7 @@ public:
     
     ButtonEncoder(pin_size_t leftButtonPin, pin_size_t rightButtonPin, pin_size_t enterButtonPin, PinStatus pressedPinStatus = LOW, int buttonPinMode = INPUT_PULLUP);
 
-    virtual void readEncoder();
+    virtual void update();
 protected:
     pin_size_t mLeftButtonPin;
     pin_size_t mRightButtonPin;

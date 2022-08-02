@@ -17,7 +17,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  be.readEncoder();
+  be.update();
   if (be.keyPressed()) {
     Serial.println("KeyPressed");
     if (be.lastKeyPressed() == Encoder::EncoderKey::ENCODER_LEFT) {

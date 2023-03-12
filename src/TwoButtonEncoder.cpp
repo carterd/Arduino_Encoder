@@ -24,6 +24,7 @@ void TwoButtonEncoder::readButtons() {
     this->mRightButtonPressed = digitalRead(this->mRightButtonPin) == this->mPressedPinStatus;
 
     // Enter has been pressed
+    this->mEnterButtonPressed = false;
     if (this->mLeftButtonPressed && this->mRightButtonPressed)
     {
         this->mDebounceState = DebounceState::ENTER_BUTTON;
